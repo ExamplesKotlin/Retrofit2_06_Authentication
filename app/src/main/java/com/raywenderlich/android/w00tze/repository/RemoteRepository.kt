@@ -41,8 +41,8 @@ import retrofit2.Response
 
 
 object RemoteRepository : Repository {
-  
-  private const val LOGIN = "w00tze"
+
+  private val LOGIN = AuthenticationPrefs.getUsername()
 
   private val api = Injection.provideGitHubApi()
 
